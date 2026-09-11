@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Camilo Porras Lopez - Presentación</title>
+    <style>
+        /* Reset y estilos globales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4284f5; /* Azul profundo */
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor principal de la tarjeta */
+        .profile-card {
+            background-color: #1f2833; /* Negro/Gris oscuro */
+            border-radius: 12px;
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border-top: 5px solid #d90429; /* Borde superior rojo */
+        }
+
+        /* Encabezado */
+        .header {
+            background: linear-gradient(135deg, #0056b3, #d90429); /* Degradado Azul y Rojo */
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #e0e0e0;
+            font-weight: 300;
+        }
+
+        /* Contenido principal */
+        .content {
+            padding: 25px 20px;
+        }
+
+        .bio {
+            background-color: #121212;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #0056b3; /* Detalle azul */
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        /* Sección de gustos */
+        .hobbies-title {
+            font-size: 1.2rem;
+            color: #d90429; /* Texto rojo */
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .hobbies-list {
+            list-style: none;
+        }
+
+        .hobby-item {
+            background-color: #0b0c10;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border: 1px solid #1f2833;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+
+        /* Indicador azul para cada item */
+        .hobby-item::before {
+            content: "•";
+            color: #0056b3;
+            font-size: 1.8rem;
+            margin-right: 12px;
+            line-height: 0;
+        }
+
+        /* Pie de página */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #121212;
+            font-size: 0.8rem;
+            color: #7a7a7a;
+        }
+
+        /* Adaptabilidad para pantallas muy pequeñas */
+        @media (max-width: 400px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .content {
+                padding: 15px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="profile-card">
+        <!-- Encabezado con Nombre y Saludo -->
+        <header class="header">
+            <h1>Hola, soy Juan Camilo Porras Lopez</h1>
+            <p>Perfil Personal</p>
+        </header>
+
+        <!-- Contenido principal -->
+        <section class="content">
+            <!-- Información académica -->
+            <div class="bio">
+                Estudiante de <strong>Tecnología en Desarrollo de Software</strong> en la Universidad Tecnológica de Pereira (UTP).
+            </div>
+
+            <!-- Sección de Gustos -->
+            <h2 class="hobbies-title">Lo que me gusta</h2>
+            <ul class="hobbies-list">
+                <li class="hobby-item">Me gustan los videojuegos.</li>
+                <li class="hobby-item">Me gustan las series y películas.</li>
+                <li class="hobby-item">Me gusta salir a conocer lugares nuevos.</li>
+            </ul>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="footer">
+            UTP Pereira - Colombia
+        </footer>
+    </main>
+
+</body>
+</html>
